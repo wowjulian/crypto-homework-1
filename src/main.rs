@@ -23,8 +23,8 @@ fn gcd(a: i64, b: i64) -> i64 {
 
 fn main() {
     let args = Args::parse();
-    if args.b < 0 {
-        println!("b must be non-negative integer");
+    if args.b <= 0 {
+        println!("b must be non-negative, non-zero integer");
         return;
     }
     if args.b >= args.a {
