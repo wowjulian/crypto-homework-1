@@ -1,0 +1,17 @@
+# How to run source code
+
+You can either run the source code or binary for convinence.
+
+## Source code
+
+1. Install [rust](https://www.rust-lang.org/learn/get-started)
+2. In this project directory, run `cargo run -- --a 400 --b 10`
+   - Optionally, you can run `cargo run -- --help` for help
+
+## Binary
+
+Should run in unix system just fine.
+
+1. Run `cd binary`
+2. Run `./crypto-homework-1 --a 400 --b 10`
+   - Optionally, you can run `./crypto-homework-1 --help` for help
