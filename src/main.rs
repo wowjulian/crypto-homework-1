@@ -37,7 +37,7 @@ fn print_x_and_y(a: i64, b: i64) {
             break;
         }
 
-        let current_x: i64 = x_prev2 - (floored_quotient * x_prev1);
+        let current_x = x_prev2 - (floored_quotient * x_prev1);
         let current_y = y_prev2 - (floored_quotient * y_prev1);
 
         x_prev2 = x_prev1;
@@ -50,7 +50,8 @@ fn print_x_and_y(a: i64, b: i64) {
         remainder_prev1 = current_remainder;
     }
 
-    println!("x: {} and y: {}", x_prev1, y_prev1);
+    println!("x: {}", x_prev1);
+    println!("y: {}", y_prev1);
 }
 
 fn main() {
