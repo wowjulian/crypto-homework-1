@@ -67,5 +67,11 @@ fn main() {
 
     let gcd_result = gcd(args.a, args.b);
     println!("gcd: {}", gcd_result);
-    print_x_and_y(args.a, args.b);
+    let is_muturally_prime = gcd_result == 1;
+    if is_muturally_prime {
+        print_x_and_y(args.a, args.b);
+    } else {
+        print_x_and_y(args.a, args.b);
+        println!("However, {} and {} are not muturally prime", args.a, args.b)
+    }
 }
